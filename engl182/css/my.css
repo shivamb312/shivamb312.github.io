@@ -1,0 +1,34 @@
+.slider-wrapper	{
+	height: 500px;
+	margin-bottom: 100px;
+}
+
+.slider-description	{
+	background-image: url(../img/my_img/tech-4.jpg);
+    height: 100%;
+    padding-top: 30%;
+    background-size: cover;
+    top: 10%;
+}
+
+.my_name	{
+	color: white;
+}
+
+.my_name h1	{
+	color:black;
+}
+
+.my-name-tags	{
+	color: white;
+}
+
+.my-text	{
+	font-size: 18px;
+}
+
+.main-title span	{
+	background: #7beec7;
+	/*font-family: 'azedolight';*/
+	padding: 15px;
+}
