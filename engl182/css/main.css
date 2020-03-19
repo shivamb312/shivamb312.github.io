@@ -500,6 +500,7 @@ a:hover>span.site-name{
     font-weight: 100;
     margin-left: 10px;
     line-height: 80px;
+    color:  #000;
 }
 .cd-intro {
     float: left;
