@@ -3,7 +3,7 @@
 	"use strict";
 
 	// Window Resize Mobile Menu Fix
-	// mobileNav();
+	mobileNav();
 
 
 	// Scroll animation init
@@ -39,7 +39,9 @@
 	});
 
 	$(document).ready(function () {
-	    $(document).on("scroll", onScroll);
+			$(document).on("scroll", onScroll);
+			
+			$("#youtube").height($("#youtube").width()*9/16);
 	    
 	    //smoothscroll
 	    $('a[href^="#"]').on('click', function (e) {
@@ -114,9 +116,9 @@
 
 
 	// Window Resize Mobile Menu Fix
-	// $(window).on('resize', function() {
-	// 	mobileNav();
-	// });
+	$(window).on('resize', function() {
+		mobileNav();
+	});
 
 
 	// Window Resize Mobile Menu Fix

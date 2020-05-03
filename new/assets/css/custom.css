@@ -1,0 +1,40 @@
+#bio p span {
+  width: 50%;
+    float: left;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#campaign .content p  {
+  padding: 10px;
+  font-weight: 500;
+  line-height: 32px;
+}
+
+#campaign .campaign-pointer {
+  /* cursor: pointer; */
+  display: block;
+  background: #FFFFFF;
+  box-shadow: 0 2px 48px 0 rgba(0, 0, 0, 0.10);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: center;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  position: relative;
+  margin-bottom: 30px;
+}
+
+#youtube  {
+  width: 70%;
+  margin-left: 15%;
+  /* height: 100%; */
+}
+
+.logo img {
+  height: 40px;
+}

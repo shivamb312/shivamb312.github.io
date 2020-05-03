@@ -28,6 +28,8 @@ font & reset css
 --------------------------------------------- 
 */
 @import url("https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900");
+@import url("https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900");
+
 /* 
 ---------------------------------------------
 reset
@@ -79,7 +81,7 @@ header, nav, section, article, aside, footer, hgroup {
 }
 
 html, body {
-  font-family: "Raleway", sans-serif;
+  font-family: "Roboto", "Raleway", sans-serif;
   font-weight: 400;
   background-color: #fff;
   font-size: 16px;
@@ -571,12 +573,12 @@ header
     padding-left: 12px;
     padding-right: 12px;
   }
-  /* .header-area .main-nav:before {
+  .header-area .main-nav:before {
     display: none;
-  } */
+  }
 }
 
-/* @media (max-width: 991px) {
+@media (max-width: 991px) {
   .header-area {
     padding: 0px 15px;
     height: 80px;
@@ -628,7 +630,7 @@ header
   .header-area .main-nav .nav li a:hover {
     background: #eee !important;
   }
-} */
+}
 
 @media (min-width: 992px) {
   .header-area .main-nav .nav {
@@ -647,28 +649,30 @@ welcome
   display: flex;
   align-items: center;
   justify-content: center;
-  background-image: url(../images/banner-bg.png);
+  background-image: url(../cont/cover.jpg);
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover; 
   height: 100vh;
 }
 
-.welcome-area .header-text {
+.welcome-area .header-textll {
   position: absolute;
-  top: 50%;
+  bottom: 0%;
   transform: translateY(-55%);
   text-align: center;
   width: 100%;
 }
 
-.welcome-area .header-text h1 {
+.welcome-area .header-textll h1 {
   font-weight: 500;
-  font-size: 36px;
+  font-size: 72px;
   line-height: 54px;
   letter-spacing: 1.4px;
-  margin-bottom: 30px;
+  /* margin-bottom: 30px; */
   color: #fff;
+  padding: 20px;
+    background: rgba(25, 25, 25, 0.57);
 }
 
 .welcome-area .header-text p {
@@ -687,11 +691,11 @@ welcome
     transform: perspective(1px) translateY(-60%) !important;
     text-align: center;
   }
-  .welcome-area .header-text h1 {
+  /* .welcome-area .header-text h1 {
     text-align: center;
     color: #fff;
     margin-bottom: 15px;
-  }
+  } */
   .welcome-area .header-text h1 span {
     color: #fff;
   }
@@ -707,11 +711,11 @@ welcome
     top: 65% !important;
     transform: perspective(1px) translateY(-60%) !important;
   }
-   .welcome-area .header-text h1 {
+   /* .welcome-area .header-text h1 {
     font-size: 22px;
     line-height: 30px;
     margin-bottom: 15px;
-  }
+  } */
   .welcome-area .header-text p {
     margin-bottom: 20px;
   }
@@ -729,11 +733,15 @@ welcome
   .welcome-area .header-text .buttons {
     display: none;
   }
-  .welcome-area .header-text h1 {
-    font-weight: 600;
-    font-size: 24px !important;
-    line-height: 30px !important;
-    margin-bottom: 30px !important;
+  .welcome-area .header-textll h1 {
+    font-weight: 500;
+    font-size: 54px;
+    line-height: 36px;
+    letter-spacing: 1.4px;
+    /* margin-bottom: 30px; */
+    color: #fff;
+    padding: 20px;  
+      background: rgba(25, 25, 25, 0.57);
   }
   .welcome-area .header-text h1 span {
     color: #fff;
@@ -826,7 +834,7 @@ features
 .home-feature {
   padding-bottom: 0px;
   padding-top: 30px;
-  margin-top: -220px;
+  /* margin-top: -220px; */
   z-index: 9;
 }
 
