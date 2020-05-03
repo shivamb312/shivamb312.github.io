@@ -1,113 +1,317 @@
-<!DOCTYPE HTML>
-<!--
-Eric Cohen
-Date: November 15, 2018
-Section: CSE 154 AI
+<!DOCTYPE html>
+<html lang="en">
 
-This is the index.html page for my portfolio of web development work.
-It includes a navigation bar that links to other pages for
-my Fraternity website. It also has a title of my Fraternity with an
-image background, a quote, a donate button and my Fraternity's mission
-statement. It also has a footer noting that the website is copyrighted.
--->
-<html lang="en-us">
   <head>
-    <meta charset = "utf-8">
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <meta name="description" content="The Cohen Campaign, Rise Up UW">
     <meta name="keywords" content="ASUW, Eric, Cohen, Campaign, RiseUpUW,
                                   RiseUpUW2020, Eric Cohen, platform">
-    <meta name="author" content="Eric Cohen">
+    <meta name="author" content="Shivam Bansal">
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,300,400,500,700,900" rel="stylesheet">
     <meta property="og:image" content="https://zbtuw.org/Images/facebook-campaign-profile.jpg" />
-    <link href="Index.css" rel="stylesheet" />
-    <link rel="icon" type="image/ico" href="Images/facebook-campaign-profile.jpg" />
-    <script src="index.js"></script>
+    <link rel="icon" type="image/ico" href="assets/cont/facebook-campaign-profile.jpg" />
+
     <title>RiseUpUW</title>
-  </head>
-  <body>
-    <header>
-      <h1 id="ZBT">Eric Cohen</h1>
-      <!--ZBT Motto-->
-      <h2 id="motto"> "Your Voice Knows No Bounds"</h2>
-      <nav>
-      <a href="https://vote.asuw.org/" class="active">Vote</a>
-        <a href="https://vote.asuw.org/filing">Endorse</a>
-        <div class="dropdown">
-          <a href="https://facebook.com/RiseUpUW2020">Social</a>
-          <div class="dropdown-content hidden">
-            <a href="https://facebook.com/RiseUpUW2020">Facebook</a>
-            <a href="https://twitter.com/draxUW">Twitter</a>
-            <a href="https://instagram.com/escohen98">Instagram</a>
-            <a href="https://twitch.tv/draxUW">Twitch</a>
-          </div>
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
+
+    <!-- <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css"> -->
+    
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">   
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="stylesheet" href="assets/css/custom.css">
+
+
+    </head>
+    
+    <body>
+    
+    <!-- ***** Preloader Start ***** -->
+    <div id="preloader">
+        <div class="jumper">
+            <div></div>
+            <div></div>
+            <div></div>
         </div>
-      </nav>
+    </div>  
+    <!-- ***** Preloader End ***** -->
+    
+    
+    <!-- ***** Header Area Start ***** -->
+    <header class="header-area header-sticky">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <nav class="main-nav">
+                        <!-- ***** Logo Start ***** -->
+                        <a  class="logo">
+                            <img src="assets/cont/logo.png" href="#"/> 
+                        </a>
+                        <!-- ***** Logo End ***** -->
+                        <!-- ***** Menu Start ***** -->
+                        <ul class="nav">
+                            <li><a href="#welcome" class="active">Home</a></li>
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#campaign">Why Vote For Me?</a></li>
+                            <li><a href="#social">Social</a></li>
+                            <li><a href="https://l.messenger.com/l.php?u=https%3A%2F%2Fvote.asuw.org%2F&h=AT3oSw7tJo-VwosQPUIWfb64DPTfkI48Jh1O8U3vzC2VxA6fBacoslgOV6-IMpzfxXVFXJap7lxWd8ONlkKt8nqFZYm3czQ9K-7Ggn7ZHV9b5ZVXQk0J7Hi6hEAl8_Ac3VzueTcj9iw">Vote</a></li>
+
+                        </ul>
+
+                        <ul class = "nav2">
+                                <li><a href="https://l.messenger.com/l.php?u=https%3A%2F%2Fvote.asuw.org%2F&h=AT3oSw7tJo-VwosQPUIWfb64DPTfkI48Jh1O8U3vzC2VxA6fBacoslgOV6-IMpzfxXVFXJap7lxWd8ONlkKt8nqFZYm3czQ9K-7Ggn7ZHV9b5ZVXQk0J7Hi6hEAl8_Ac3VzueTcj9iw">Vote</a></li>
+                        </ul>
+                        
+                        <a class='menu-trigger'>
+                            <span>Menu</span>
+                        </a>
+                        <!-- ***** Menu End ***** -->
+                    </nav>
+                </div>
+            </div>
+        </div>
     </header>
-    <main>
-      <!-- Copied from the ZBT Alpha Mu at University of Washington
-      Facebook Page: https://www.facebook.com/pg/uwzbt/ -->
-      <div class="main-text">
-        <img id="plat-pic" src="Images/Cohen-pic.jpg" alt="picture"/>
-        <p id = "plat-text">
-          Student Life, the major system, and transparency with the student body
-           are three aspects that this school<br> severely lacks. Student Life is a
-           major aspect of every university in the country. UW is known as a<br>
-           commuter school, and I want to change that culture. Not only that,
-           but the major system is also broken.<br> If elected, I will invest resources
-           into student engagement, alleviate the stress of the major system, and<br>
-           increase transparency to students.
-          <br><br>
-          I have been a part of many student clubs on campus, so I know what it's
-          like to be in a group of people<br> who want to share their passions.
-          I am currently serving as the Esports Coordinator for the<br>
-          Gaming Association at UW, I am the Internal Vice President and
-          Operations Director for Zeta Beta Tau,<br> I played on our club Ultimate
-          Frisbee team, and I founded the Rocket League club before I even began<br>
-          attending UW. Throughout my time in all these organizations, I saw how
-          much club culture can empower<br> and inspire. I want to bring that to the
-          rest of the school.
-          <br><br>
-          I have spoken to many students and I have listened to their concerns.
-          I know what students want and<br> what they do not. Here is what I plan
-          to accomplish:
-          <br>
-          <div id="to-white">
-          <ul>
-            <li>Work with the Director of Legislative affairs to increase the
-              Washington State Financial aid budget</li><br>
-            <li>Ensure that the online learning tools that have been introduced
-              in spring quarter are to be<br> utilized once in-person classes
-              resume and improve the accessibility of our classes.</li><br>
-            <li>Grow the marginalized communities on campus with the Director of
-              Diversity Affairs by ensuring<br> that every student is represented.</li><br>
-            <li>Work with the Director of University Affairs and the Provost
-              Advisory Committee for Students<br> to create a more holistic major
-              application process.</li><br>
-            <li>Create an ASUW Discord and empower /r/udub subreddit with ASUW resources
-               and work with them to<br> serve as new channel of communications and to
-                strengthen the online community for UW students</li><br>
-            <li>Bring UW into broadcasting space on YouTube, Twitch, and Facebook
-               to create fun and<br> entertaining content that also informs students
-                on what is happening at the school.</li><br>
-            <li>Work with the Director of Programming and Director of Community
-              Relations to restructure the<br> RSO system to give individual clubs
-              and students more of a voice. </li><br>
-            <li>Create more engagement opportunities with ASUW officers for the
-              public, such as weekly<br> community game nights and seasonal panels. </li><br>
-            <li>Move the UWPD off-campus boundary from 45th to 47th or even 50th.</li><br>
-            <li>Repave the streets in the Greek System</li>
-          </ul><br>
-          <br>
-          I have spent my time at this school making changes for the better, and
-          I promise to continue to improve<br> the school as your ASUW President!
+    <!-- ***** Header Area End ***** -->
+
+    <!-- ***** Welcome Area Start ***** -->
+    <div class="welcome-area" id="welcome">
+
+        <!-- ***** Header Text Start ***** -->
+        <div class="header-textll">
+            <div class="container">
+                <div class="row">
+                    <div class="offset-xl-3 col-xl-6 offset-lg-2 col-lg-8 col-md-12 col-sm-12">
+
+                        <h1>Eric Cohen</h1>
+                    </div>
+                </div>
+            </div>
         </div>
-        </p>
-          <!--Taken from https://zbt.org-->
-      </div>
-    </main>
-    <footer>
-      <!--Paraphrased from https://zbttexas.com/-->
-        <p> &copy; 2018 by Washington Alpha Mu. Site Managed by ZBT Washington
-            Internet Chair.</p>
+        <!-- ***** Header Text End ***** -->
+    </div>
+    <!-- ***** Welcome Area End ***** -->
+
+    <section class="section padding-top-70 padding-bottom-70" id="about">
+        <div class = "container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="center-heading">
+                    <h2 class="section-title">About Me</h2>
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ***** Section Title End ***** -->
+
+        <div class="row">
+            <!-- ***** BIO Start Start ***** -->
+            <div class="col-lg-4 col-md-6 col-sm-12" data-scroll-reveal="enter left move 30px over 0.6s after 0.2s">
+                <div class="team-item"> 
+                    <div class="team-content" id = "bio">
+                        <i>BIO</i>
+                        <!-- <p>Proin a neque nisi. Nam ipsum nisi, venenatis ut nulla quis, egestas scelerisque orci. Maecenas a finibus odio.</p> -->
+                        <br>
+                        <ul>
+                                <li><p><span>Name</span>  Eric Cohen  </p></li>
+                                <li><p><span>From</span>  San Diego  </p></li>
+                                <li><p><span>Location</span>  Seattle  </p></li>
+                                <li><p><span>Age</span>  21  </p></li>
+
+                            
+
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+            <!-- ***** BIO End ***** -->
+            
+            <!-- ***** Pros Start ***** -->
+            <div class="col-lg-4 col-md-6 col-sm-12" data-scroll-reveal="enter left move 30px over 0.6s after 0.2s">
+                <div class="team-item">
+                    <div class="team-content">
+                        <i>PROS</i>
+                        <p>
+                            <ul>
+                                <li><p>Makes the best garlic chicken you'll ever try 🍗</p></li>
+                                <li><p>Winner of the PaxArena Rocket League 2v2 Tournament 🎮</p></li>
+                                <li><p>Used to be #1 in Cartoon Network's Card Wars 🃏</p></li>
+                                <li><p> Can provide free Chipotle 🌯</p></li>
+                                <li><p>Able to build you a class registration bot 🤖</p></li>
+                                <li><p>A bit of a clown 🤡</p></li>
+                                <li><p> Grows a beard in less than a month 🧔</p></li>
+                                <li><p> Can deadlift over 400lbs 💪</p></li>
+                            </ul>
+                        </p>
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- ***** Pros End ***** -->
+            
+            <!-- ***** Cons Start ***** -->
+            <div class="col-lg-4 col-md-6 col-sm-12" data-scroll-reveal="enter left move 30px over 0.6s after 0.2s">
+                <div class="team-item">
+                    <div class="team-content">
+                        <i>CONS</i>
+                        <p>
+                                <ul>
+                                    <li><p>Will most likely use up all of your bandwidth 💻</p></li>
+                                    <li><p>Tend to dress like an old dad 👴</p></li>
+                                    <li><p>Will make you clean up your messes 🧹</p></li>
+                                    <li><p> Pronounces interstates as "the 5" 🛣</p></li>
+                                    <li><p>Might take your jokes seriously 😅</p></li>
+                                    <li><p>A bit of a clown 🤡</p></li>
+                                </ul>
+                            </p>
+                    </div>
+                </div>
+            </div>
+            <!-- ***** Cons End ***** -->
+        </div>
+    </div>
+
+    </section>
+    <section class = "section colored section padding-top-70 padding-bottom-70" id = "campaign">
+            <div class = "container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="center-heading">
+                                <h2 class="section-title">Why Vote For Me ?</h2>
+                            </div>
+                        </div>            
+                    </div>
+                    <div class="row">
+                            <div class="col-lg-12" >
+                               <div class = "content">
+                                    <p>Student Life, the major system, and transparency with the student body are three aspects that this school
+                                            severely lacks. Student Life is a major aspect of every university in the country. UW is known as a
+                                            commuter school, and I want to change that culture. Not only that, but the major system is also broken.
+                                            If elected, I will invest resources into student engagement, alleviate the stress of the major system, and
+                                            increase transparency to students.</p>
+                                    <p>I have been a part of many student clubs on campus, so I know what it's like to be in a group of people
+                                            who want to share their passions. I am currently serving as the Esports Coordinator for the
+                                            Gaming Association at UW, I am the Internal Vice President and Operations Director for Zeta Beta Tau,
+                                            I played on our club Ultimate Frisbee team, and I founded the Rocket League club before I even began
+                                            attending UW. Throughout my time in all these organizations, I saw how much club culture can empower
+                                            and inspire. I want to bring that to the rest of the school.</p>
+                                    <p>I have spoken to many students and I have listened to their concerns. I know what students want and
+                                            what they do not. Here is what I plan to accomplish:</p>
+                               </div>
+                            </div>            
+                        </div>
+                        <div class = "row">
+                            <div class = "offset-lg-1 offset-md-1 offset-sm-1 col-lg-10 col-md-10 col-sm-10" data-scroll-reveal="enter bottom move 30px over 0.6s after 0.2s">
+                                <div class = "campaign-pointer">Work with the Director of Legislative affairs to increase the Washington State Financial aid budget</div>
+                            </div>
+                        </div>
+                        <div class = "row">
+                                <div class = "offset-lg-1 offset-md-1 offset-sm-1 col-lg-10 col-md-10 col-sm-10" data-scroll-reveal="enter bottom move 30px over 0.6s after 0.2s">
+                                        <div class = "campaign-pointer">Ensure that the online learning tools that have been introduced in spring quarter are to be utilized once in-person classes resume and improve the accessibility of our classes</div>
+                                </div>
+                            </div>
+                    <div class = "row">
+                            <div class = "offset-lg-1 offset-md-1 offset-sm-1 col-lg-10 col-md-10 col-sm-10" data-scroll-reveal="enter bottom move 30px over 0.6s after 0.2s">
+                                    <div class = "campaign-pointer">Grow the marginalized communities on campus with the Director of Diversity Affairs by ensuring that every student is represented</div>
+                            </div>
+                        </div>
+                        <div class = "row">
+                                <div class = "offset-lg-1 offset-md-1 offset-sm-1 col-lg-10 col-md-10 col-sm-10" data-scroll-reveal="enter bottom move 30px over 0.6s after 0.2s"> 
+                                        <div class = "campaign-pointer">Work with the Director of University Affairs and the Provost Advisory Committee for Students to create a more holistic major application process</div>
+                                </div>
+                            </div>
+                            <div class = "row">
+                                    <div class = "offset-lg-1 offset-md-1 offset-sm-1 col-lg-10 col-md-10 col-sm-10" data-scroll-reveal="enter bottom move 30px over 0.6s after 0.2s">
+                                            <div class = "campaign-pointer">Create an ASUW Discord and empower /r/udub subreddit with ASUW resources and work with them to serve as new channel of communications and to strengthen the online community for UW students</div>
+                                    </div>
+                                </div>
+                            <div class = "row">
+                                    <div class = "offset-lg-1 offset-md-1 offset-sm-1 col-lg-10 col-md-10 col-sm-10" data-scroll-reveal="enter bottom move 30px over 0.6s after 0.2s">
+                                            <div class = "campaign-pointer">Bring UW into broadcasting space on YouTube, Twitch, and Facebook to create fun and entertaining content that also informs students on what is happening at the school</div>
+                                    </div>
+                                </div>
+                                <div class = "row">
+                                        <div class = "offset-lg-1 offset-md-1 offset-sm-1 col-lg-10 col-md-10 col-sm-10" data-scroll-reveal="enter bottom move 30px over 0.6s after 0.2s">
+                                                <div class = "campaign-pointer">Work with the Director of Programming and Director of Community Relations to restructure the
+                                                        RSO system to give  individual clubs and students more of a voice</div>
+                                        </div>
+                                    </div>
+
+                                    <div class = "row">
+                                            <div class = "offset-lg-1 offset-md-1 offset-sm-1 col-lg-10 col-md-10 col-sm-10" data-scroll-reveal="enter bottom move 30px over 0.6s after 0.2s">
+                                                        <div class = "campaign-pointer">Create more engagement opportunities with ASUW officers for the public, such as weekly
+                                                                community game nights and seasonal panels</div>
+                                            </div>
+                                        </div>
+                                        <div class = "row">
+                                                <div class = "offset-lg-1 offset-md-1 offset-sm-1 col-lg-10 col-md-10 col-sm-10" data-scroll-reveal="enter bottom move 30px over 0.6s after 0.2s">
+                                                            <div class = "campaign-pointer">Move the UWPD off-campus boundary from 45th to 47th or even 50th</div>
+                                                </div>
+                                            </div>
+                                <div class = "row">
+                                        <div class = "offset-lg-1 offset-md-1 offset-sm-1 col-lg-10 col-md-10 col-sm-10" data-scroll-reveal="enter bottom move 30px over 0.6s after 0.2s">
+                                                    <div class = "campaign-pointer">Repave the streets in the Greek System</div>
+                                        </div>
+                                    </div>
+
+                        <div class = "row">
+                            <div class = "offset-lg-1 offset-md-1 offset-sm-1 col-lg-10 col-md-10 col-sm-10">
+                                    <iframe id = "youtube"
+                                    src="https://www.youtube.com/embed/LoVyfzgVoPw">
+                                    </iframe>
+                            </div>
+                            </div>
+
+            </div>
+    </section>
+
+
+
+    
+    <!-- ***** Footer Start ***** -->
+    <footer id = "social">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 col-md-12 col-sm-12">
+                    <ul class="social">
+                        <li><a href="https://www.facebook.com/escohen98"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://twitter.com/draxuw"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://instagram.com/escohen98"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://twitch.tv/draxuw"><i class="fa fa-twitch"></i></a></li>
+
+                        <!-- <li><a href="#"><i class="fa fa-rss"></i></a></li> -->
+                        <!-- <li><a href="#"><i class="fa fa-dribbble"></i></a></li> -->
+                    </ul>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="copyright">Copyright &copy; 2020 For Eric - With ❤️ By Shivam</p>
+                </div>
+            </div>
+        </div>
     </footer>
+    
+    <!-- jQuery -->
+    <script src="assets/js/jquery-2.1.0.min.js"></script>
+
+    <!-- Bootstrap -->
+    <script src="assets/js/popper.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+
+    <!-- Plugins -->
+    <script src="assets/js/scrollreveal.min.js"></script>
+    <script src="assets/js/waypoints.min.js"></script>
+    <script src="assets/js/jquery.counterup.min.js"></script>
+    <script src="assets/js/imgfix.min.js"></script> 
+    
+    <!-- Global Init -->
+    <script src="assets/js/custom.js"></script>
+
   </body>
 </html>
