@@ -400,6 +400,6 @@ function initializeClock(id, endtime) {
   const timeinterval = setInterval(updateClock, 1000);
 }
 
-const deadline = new Date('June 17, 2022 10:00:00');
+const deadline = new Date('June 17, 2022 7:00:00');
 console.log(deadline);
 initializeClock('clockdiv', deadline);
