@@ -342,7 +342,7 @@ el.blup.volume = volume;
 el.blop.volume = volume;
 
 const toggleSound = () => {
-  let on = true;
+  let on = false;
   return () => {
     if (on) {
       el.blup.volume = 0.0;
@@ -400,6 +400,7 @@ function initializeClock(id, endtime) {
   const timeinterval = setInterval(updateClock, 1000);
 }
 
-const deadline = new Date('June 17, 2022 7:00:00');
+// const deadline = new Date('June 17, 2022 7:00:00');
+const deadline =  new Date("2022-06-17T07:00:00.000+05:30");
 console.log(deadline);
 initializeClock('clockdiv', deadline);

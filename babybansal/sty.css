@@ -50,6 +50,7 @@ html, body {
     right: 1rem;
     text-decoration: underline;
     cursor: default;
+    display: none;
 }
 .sound--off {
     text-decoration: line-through;
